@@ -1,39 +1,30 @@
-import { useState } from 'react'
-import { motion } from 'framer-motion'
+import React, { useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
+import type { PageSection } from './types';
+import { Navbar } from './components/Navbar';
+import  {Footer}  from './components/Footer';
+import { Home } from './pages/Home';
+import { About } from './pages/About';
+import { Projects } from './pages/Projects';
+import { Contacts } from './pages/Contacts';
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [activeTab, setActiveTab] = useState<PageSection>('home');
 
   return (
-    <main className="flex min-h-svh flex-col items-center justify-center gap-8 bg-neutral-950 text-white">
-      <motion.h1
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-5xl font-bold"
-      >
-        React + TypeScript + Tailwind + Framer Motion
-      </motion.h1>
+    <div className="min-h-screen bg-[#0D0B1F] text-[#ecebf3] flex flex-col justify-between selection:bg-white selection:text-[#0b0b14]">
+      <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
 
-      <motion.button
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        onClick={() => setCount((c) => c + 1)}
-        className="rounded-lg bg-indigo-500 px-6 py-3 text-lg font-medium"
-      >
-        Count is {count}
-      </motion.button>
+      <main className="flex-grow flex items-center">
+        <AnimatePresence mode="wait">
+          {activeTab === 'home' && <Home key="home" />}
+          {activeTab === 'about' && <About key="about" />}
+          {activeTab === 'projects' && <Projects key="projects" />}
+          {activeTab === 'contact' && <Contacts key="contact" />}
+        </AnimatePresence>
+      </main>
 
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.4 }}
-        className="text-neutral-400"
-      >
-        Edit <code className="text-neutral-200">src/App.tsx</code> to get started.
-      </motion.p>
-    </main>
-  )
+      <Footer />
+    </div>
+  );
 }
-
-export default App

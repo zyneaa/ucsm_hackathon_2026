@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import type { PageSection } from './types';
 import { Navbar } from './components/Navbar';
@@ -12,16 +12,18 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<PageSection>('home');
 
   return (
-    <div className="min-h-screen bg-[#0D0B1F] text-[#ecebf3] flex flex-col justify-between selection:bg-white selection:text-[#0b0b14]">
+    <div className="min-h-screen bg-[#0D0B1F] text-[#ffffff] flex flex-col justify-between overflow-x-clip selection:bg-white selection:text-[#0D0B1F]">
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
 
       <main className="flex-grow flex items-center">
-        <AnimatePresence mode="wait">
-          {activeTab === 'home' && <Home key="home" />}
-          {activeTab === 'about' && <About key="about" />}
-          {activeTab === 'projects' && <Projects key="projects" />}
-          {activeTab === 'contact' && <Contacts key="contact" />}
-        </AnimatePresence>
+        <div className="w-[75%] max-w-[1440px] mx-auto">
+          <AnimatePresence mode="wait">
+            {activeTab === 'home' && <Home key="home" />}
+            {activeTab === 'about' && <About key="about" />}
+            {activeTab === 'projects' && <Projects key="projects" />}
+            {activeTab === 'contact' && <Contacts key="contact" />}
+          </AnimatePresence>
+        </div>
       </main>
 
       <Footer />

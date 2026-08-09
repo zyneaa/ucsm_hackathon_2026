@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import type{ PageSection } from '../types';
+import type { PageSection } from '../types';
 
 interface NavbarProps {
   activeTab: PageSection;
@@ -11,92 +11,94 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   return (
-    <header className="w-full bg-[#0D0B1F] text-[#ecebf3] py-2 px-6  relative z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <header className="relative z-50 bg-[#0D0B1F]/90 backdrop-blur-md py-4 px-6 md:px-12">
+      <nav className="hidden md:flex justify-between items-center w-[90vw] mx-auto text-sm md:text-base font-seasons tracking-wider">
         
-        {/* Home,Projects*/}
-        <nav className="hidden md:flex items-center space-x-12">
-          <button
-            onClick={() => setActiveTab('home')}
-            className={`text-sm font-serif tracking-wide transition-opacity ${
-              activeTab === 'home' ? 'opacity-100 font-semibold' : 'opacity-60 hover:opacity-100'
-            }`}
-          >
-            Home
-          </button>
-          <button
-            onClick={() => setActiveTab('projects')}
-            className={`text-sm font-serif tracking-wide transition-opacity ${
-              activeTab === 'projects' ? 'opacity-100 font-semibold' : 'opacity-60 hover:opacity-100'
-            }`}
-          >
-            Projects
-          </button>
-        </nav>
+        {/* Home, Projects */}
+        <button
+          onClick={() => setActiveTab('home')}
+          className={`hover:text-white transition-colors cursor-pointer ${
+            activeTab === 'home' ? 'text-white border-b border-white pb-0.5' : 'text-white/90'
+          }`}
+        >
+          Home
+        </button>
+        <button
+          onClick={() => setActiveTab('projects')}
+          className={`hover:text-white transition-colors cursor-pointer ${
+            activeTab === 'projects' ? 'text-white border-b border-white pb-0.5' : 'text-white/90'
+          }`}
+        >
+          Projects
+        </button>
 
         {/* NavTitle */}
-        <div 
+        <button
           onClick={() => setActiveTab('home')}
-          className="cursor-pointer text-center flex flex-col items-center justify-center space-y-0.5 mx-auto md:mx-0"
+          className="text-center group cursor-pointer"
         >
-          <span className="text-xs font-serif tracking-widest text-[#ecebf3]/70 uppercase">UCSM</span>
-          <span className="text-sm font-serif tracking-widest uppercase text-[#ecebf3]">AI HACKATHON</span>
-          <span className="text-xs font-serif tracking-widest text-[#ecebf3]/70">2026</span>
-        </div>
+          <span className="block text-xs md:text-sm tracking-[0.2em] font-seasons uppercase text-white group-hover:text-white/80 transition-colors">
+            UCSM
+          </span>
+          <span className="block text-xs md:text-sm tracking-[0.25em] font-seasons uppercase text-white group-hover:text-white/80 transition-colors">
+            AI HACKATHON
+          </span>
+          <span className="block text-xs md:text-sm tracking-[0.2em] font-seasons uppercase text-white/80">
+            2026
+          </span>
+        </button>
 
-        {/* AboutUs,ContactUs Nav */}
-        <nav className="hidden md:flex items-center space-x-12">
-          <button
-            onClick={() => setActiveTab('about')}
-            className={`text-sm font-serif tracking-wide transition-opacity ${
-              activeTab === 'about' ? 'opacity-100 font-semibold' : 'opacity-60 hover:opacity-100'
-            }`}
-          >
-            About Us
-          </button>
-          <button
-            onClick={() => setActiveTab('contact')}
-            className={`text-sm font-serif tracking-wide transition-opacity ${
-              activeTab === 'contact' ? 'opacity-100 font-semibold' : 'opacity-60 hover:opacity-100'
-            }`}
-          >
-            Contact Us
-          </button>
-        </nav>
+        {/* About Us, Contact Us */}
+        <button
+          onClick={() => setActiveTab('about')}
+          className={`hover:text-white transition-colors cursor-pointer ${
+            activeTab === 'about' ? 'text-white border-b border-white pb-0.5' : 'text-white/90'
+          }`}
+        >
+          About Us
+        </button>
+        <button
+          onClick={() => setActiveTab('contact')}
+          className={`hover:text-white transition-colors cursor-pointer ${
+            activeTab === 'contact' ? 'text-white border-b border-white pb-0.5' : 'text-white/90'
+          }`}
+        >
+          Contact Us
+        </button>
 
         {/* Mobile Toggle */}
-        <button 
+        <button
           onClick={() => setIsMobileOpen(!isMobileOpen)}
-          className="md:hidden text-[#ecebf3] focus:outline-none absolute right-6"
+          className="md:hidden text-[#ffffff] focus:outline-none absolute right-6"
         >
           {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
-      </div>
+      </nav>
 
       {/* Mobile Menu */}
       {isMobileOpen && (
-        <div className="md:hidden bg-[#0b0b14] border-t border-white/10 mt-6 pt-4 pb-2 flex flex-col space-y-4 px-2">
+        <div className="md:hidden bg-[#0D0B1F]/95 backdrop-blur-md mt-4 pt-4 pb-2 flex flex-col space-y-4 px-2">
           <button
             onClick={() => { setActiveTab('home'); setIsMobileOpen(false); }}
-            className={`text-left text-sm py-2 ${activeTab === 'home' ? 'text-white font-bold' : 'text-[#ecebf3]/70'}`}
+            className={`text-left text-base py-2 font-seasons tracking-wider ${activeTab === 'home' ? 'text-white border-b border-white pb-0.5 w-fit' : 'text-white/70'}`}
           >
             Home
           </button>
           <button
             onClick={() => { setActiveTab('projects'); setIsMobileOpen(false); }}
-            className={`text-left text-sm py-2 ${activeTab === 'projects' ? 'text-white font-bold' : 'text-[#ecebf3]/70'}`}
+            className={`text-left text-base py-2 font-seasons tracking-wider ${activeTab === 'projects' ? 'text-white border-b border-white pb-0.5 w-fit' : 'text-white/70'}`}
           >
             Projects
           </button>
           <button
             onClick={() => { setActiveTab('about'); setIsMobileOpen(false); }}
-            className={`text-left text-sm py-2 ${activeTab === 'about' ? 'text-white font-bold' : 'text-[#ecebf3]/70'}`}
+            className={`text-left text-base py-2 font-seasons tracking-wider ${activeTab === 'about' ? 'text-white border-b border-white pb-0.5 w-fit' : 'text-white/70'}`}
           >
             About Us
           </button>
           <button
             onClick={() => { setActiveTab('contact'); setIsMobileOpen(false); }}
-            className={`text-left text-sm py-2 ${activeTab === 'contact' ? 'text-white font-bold' : 'text-[#ecebf3]/70'}`}
+            className={`text-left text-base py-2 font-seasons tracking-wider ${activeTab === 'contact' ? 'text-white border-b border-white pb-0.5 w-fit' : 'text-white/70'}`}
           >
             Contact Us
           </button>

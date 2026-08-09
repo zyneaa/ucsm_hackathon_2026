@@ -1,7 +1,17 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import HomeImage from '../assets/Home.png';
 import { GrandChallenge } from '../components/GrandChallenge';
+
+const container: Variants = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.1 } },
+};
+
+const fadeUp: Variants = {
+  hidden: { opacity: 0, y: 16 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+};
 
 export const Home: React.FC = () => {
   return (
@@ -10,54 +20,90 @@ export const Home: React.FC = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full max-w-7xl mx-auto px-2 py-2 md:py-12 flex flex-col justify-between min-h-[calc(100vh-140px)] relative overflow-x-clip"
+      className="w-full px-2 md:px-10 lg:px-16 py-2 md:py-12 flex flex-col justify-between min-h-[calc(100vh-140px)] relative"
     >
       {/* Main Container */}
-      <div className="relative my-auto py-2 flex flex-col lg:flex-row items-center justify-start">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="relative left-1/2 -translate-x-1/2 w-[90vw] my-auto py-2 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-4"
+      >
         
         {/* Left Column Text Content */}
-        <div className="max-w-xl lg:max-w-2xl z-20 relative space-y-4 shrink-0">
+        <motion.div variants={fadeUp} className="max-w-2xl lg:max-w-3xl z-20 relative space-y-4 shrink-0">
           
-          <div className="font-mono text-xs md:text-sm tracking-[0.25em] text-[#ecebf3]/80 uppercase pl-1">
+          <div className="font-mono text-sm md:text-base tracking-[0.25em] text-[#ffffff]/80 uppercase pl-1">
             UCSM . September 3
           </div>
 
           {/* Left section */}
-          <div className="font-serif tracking-tight text-[#ecebf3] uppercase text-6xl sm:text-7xl lg:text-8xl leading-[0.9] space-y-2">
-            <div>WHERE</div>
+          <div className="font-serif tracking-tight text-[#ffffff] uppercase text-7xl sm:text-8xl lg:text-9xl leading-[0.9] space-y-2">
+            <motion.div variants={fadeUp}>WHERE</motion.div>
             
             {/* Banner Highlight Box for CODE (Flush left with 'CODE', stretching full-screen right) */}
-                <div className="relative my-3 py-2 flex items-center">
+                <motion.div variants={fadeUp} className="relative my-3 py-2 flex items-center">
                 {/* White strip starting exactly at the left edge of CODE and stretching right */}
-                <div className="absolute inset-y-0 left-0 w-[200vw] bg-[#ecebf3] z-0" />
+                <div className="absolute inset-y-0 left-0 w-[200vw] bg-[#ffffff] z-0" />
                 
                 {/* Dark Text over White Strip */}
-                <span className="font-serif font-normal tracking-tight text-6xl sm:text-7xl lg:text-8xl text-[#0b0b14] block relative z-10 pl-0">
+                <span className="font-serif font-normal tracking-tight text-7xl sm:text-8xl lg:text-9xl text-[#0D0B1F] block relative z-10 pl-0">
                     CODE
                 </span>
-                </div>
+                </motion.div>
 
-            <div>BECOMES</div>
-            <div>REALITY</div>
+            <motion.div variants={fadeUp}>BECOMES</motion.div>
+            <motion.div variants={fadeUp}>REALITY</motion.div>
           </div>
-        </div>
+        </motion.div>
 
-        {/* Right section */}
-        <div className="z-30 pointer-events-none hidden md:block -ml-16 lg:-ml-28 mt-6 lg:mt-0 w-[480px] lg:w-[580px] shrink-0">
+        {/* Center section */}
+        <motion.div
+          variants={fadeUp}
+          className="z-30 pointer-events-none hidden md:block w-[520px] lg:w-[640px] shrink-0"
+        >
           <img 
             src={HomeImage} 
             alt="Pixelated Dither Graphic" 
             className="w-full h-auto object-contain select-none"
           />
-        </div>
-      </div>
+        </motion.div>
+
+        {/* Right Column Text Content */}
+        <motion.div variants={fadeUp} className="max-w-2xl lg:max-w-3xl z-20 relative space-y-4 shrink-0">
+          {/* Invisible spacer to align this column's serif rows with the left column */}
+          <div className="font-mono text-sm md:text-base tracking-[0.25em] uppercase pl-1 opacity-0">
+            UCSM . September 3
+          </div>
+
+          <div className="font-serif tracking-tight text-[#ffffff] uppercase text-7xl sm:text-8xl lg:text-9xl leading-[0.9] space-y-2 text-right">
+            <motion.div variants={fadeUp}>WHERE</motion.div>
+
+            {/* IDEA sits on the same white strip line that runs from CODE across the screen */}
+            <motion.div variants={fadeUp} className="relative my-3 py-2 flex items-center justify-end">
+              <span className="font-serif font-normal tracking-tight text-7xl sm:text-8xl lg:text-9xl text-[#0D0B1F] block relative z-10 pl-6">
+                IDEA
+              </span>
+            </motion.div>
+
+            <motion.div variants={fadeUp}>SHAPE</motion.div>
+            <motion.div variants={fadeUp}>FUTURE</motion.div>
+          </div>
+        </motion.div>
+      </motion.div>
 
       {/* Bottom Subtitle Caption */}
-      <div className="pt-8 pb-4 text-center  z-20">
-        <p className="font-serif text-xs md:text-sm tracking-widest uppercase text-[#ecebf3]/80 max-w-4xl mx-auto leading-relaxed">
+      <motion.div
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
+        className="pt-8 pb-4 text-center  z-20"
+      >
+        <p className="font-serif text-sm md:text-base tracking-widest uppercase text-[#ffffff]/80 max-w-4xl mx-auto leading-relaxed">
           CELEBRATING 29 YEARS OF ACADEMIC EXCELLENCE &amp; TECHNOLOGICAL INNOVATION THROUGH ARTIFICIAL INTELLIGENCE
         </p>
-      </div>
+      </motion.div>
         {/* Grand Challenge Section */}
         <GrandChallenge />
     </motion.div>

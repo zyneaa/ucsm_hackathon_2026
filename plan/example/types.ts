@@ -1,5 +1,3 @@
-export type PageSection = 'home' | 'projects' | 'about' | 'contact';
-
 export interface Track {
   id: string;
   name: string;
@@ -10,13 +8,19 @@ export interface Track {
   mentors: string[];
 }
 
-export interface Project {
+export interface ProjectGroup {
   id: number;
-  groupName: string;
-  projectName: string;
+  groupNumber: string;
+  title: string;
   members: string[];
   description: string;
-  shortIntro: string;
-  track: string;
   link: string;
+  track: string;
+}
+
+export interface ContactFormInput {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
 }

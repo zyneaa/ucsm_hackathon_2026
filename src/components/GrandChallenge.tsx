@@ -26,12 +26,12 @@ export const GrandChallenge: React.FC = () => {
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl uppercase tracking-wider text-[#0b0b14] leading-tight">
           THE GRAND CHALLENGE
         </h2>
-        <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl uppercase tracking-wide text-[#0b0b14] mt-1 mb-4">
+        <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl uppercase tracking-wide text-[#0D0D1F] mt-1 mb-4">
           AI FOR MYANMAR
         </h3>
 
         {/* Subtitle description */}
-        <p className="font-mono text-xs sm:text-sm tracking-wide text-[#0b0b14]/80 w-full uppercase mb-8">
+        <p className="font-mono text-xs sm:text-sm tracking-wide text-[#0D0D1F]/80 w-full uppercase mb-8">
           Build real-world solutions for Agriculture, Healthcare, Education, Smart City, and FinTech
         </p>
 
@@ -39,7 +39,7 @@ export const GrandChallenge: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 w-full max-w-5xl mb-6 md:mb-8">
           
           {/* Agriculture */}
-          <div className="relative aspect-square bg-[#0b0b14] overflow-hidden group">
+          <div className="relative aspect-square bg-[#0D0D1F] overflow-hidden group">
             <img 
               src={AgricultureImg} 
               alt="Agriculture Track" 
@@ -51,7 +51,7 @@ export const GrandChallenge: React.FC = () => {
           </div>
 
           {/* Healthcare */}
-          <div className="relative aspect-square bg-[#0b0b14] overflow-hidden group">
+          <div className="relative aspect-square bg-[#0D0D1F] overflow-hidden group">
             <img 
               src={HealthcareImg} 
               alt="Healthcare Track" 
@@ -63,7 +63,7 @@ export const GrandChallenge: React.FC = () => {
           </div>
 
           {/* Education */}
-          <div className="relative aspect-square bg-[#0b0b14] overflow-hidden group">
+          <div className="relative aspect-square bg-[#0D0D1F] overflow-hidden group">
             <img 
               src={EducationImg} 
               alt="Education Track" 
@@ -79,7 +79,7 @@ export const GrandChallenge: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 w-full max-w-3xl mb-12">
           
           {/* Smart City */}
-          <div className="relative aspect-square bg-[#0b0b14] overflow-hidden group">
+          <div className="relative aspect-square bg-[#0D0D1F] overflow-hidden group">
             <img 
               src={SmartCityImg} 
               alt="Smart City Track" 
@@ -91,7 +91,7 @@ export const GrandChallenge: React.FC = () => {
           </div>
 
           {/* Fintech */}
-          <div className="relative aspect-square bg-[#0b0b14] overflow-hidden group">
+          <div className="relative aspect-square bg-[#0D0D1F] overflow-hidden group">
             <img 
               src={FintechImg} 
               alt="FinTech Track" 
@@ -104,10 +104,10 @@ export const GrandChallenge: React.FC = () => {
         </div>
 
         <div className="pt-6 w-full max-w-sm">
-          <p className="font-serif text-4xl sm:text-2xl uppercase tracking-widest text-[#0b0b14]">
+          <p className="font-serif text-4xl sm:text-2xl uppercase tracking-widest text-[#0D0D1F]">
             UCSM AI HACKATHON
           </p>
-          <p className="font-serif text-4xl sm:text-3xl tracking-widest text-[#0b0b14] mt-1">
+          <p className="font-serif text-4xl sm:text-3xl tracking-widest text-[#0D0D1F] mt-1">
             2026
           </p>
         </div>

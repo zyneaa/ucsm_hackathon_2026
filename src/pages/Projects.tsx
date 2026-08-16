@@ -13,7 +13,7 @@ const projectsData: Project[] = [
     shortIntro:
       'AI-powered crop health diagnostics and smart irrigation management tool built for Myanmar farming communities.',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
+      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.',
     link: 'https://github.com/ucsm-hackathon/agrisense-myanmar',
   },
   {
@@ -25,7 +25,7 @@ const projectsData: Project[] = [
     shortIntro:
       'Affordable AI-driven medical imaging diagnostics and triage system designed for underserved rural clinics.',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
+      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.',
     link: 'https://github.com/ucsm-hackathon/medivision-ai',
   },
 ];
@@ -47,32 +47,33 @@ export const Projects: React.FC = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full px-6 md:px-10 lg:px-16 py-8 md:py-12 flex flex-col justify-between min-h-[calc(100vh-140px)] text-[#ffffff]"
+      className="w-full flex flex-col items-center pt-0 sm:pt-6 pb-12 text-[#ffffff]"
     >
-      {/* ProjectImg */}
-        <div className="relative w-full h-64 sm:h-80 md:h-96 bg-[#0D0B1F]">
-            <img
-                src={ProjectBannerImg}
-                alt="Projects Hero Banner"
-                className="w-full h-full object-cover"
-            />
+      {/* Hero Banner Container */}
+      <div className="relative w-full h-56 sm:h-80 md:h-96 bg-[#0D0B1F]">
+        <img
+          src={ProjectBannerImg}
+          alt="Projects Hero Banner"
+          className="w-full h-full object-cover"
+        />
 
-            <div className="absolute top-full left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#0D0B1F] px-10 sm:px-16 py-4 z-10 border-t border-x border-white/10">
-                <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl uppercase tracking-[0.2em] text-white text-center whitespace-nowrap">
-                PROJECTS
-                </h1>
-            </div>
+        {/* PROJECTS Title Badge overlapping the bottom boundary */}
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 bg-[#0D0B1F] px-8 sm:px-16 py-3 sm:py-4 z-10 border border-white/10">
+          <h1 className="font-serif text-2xl sm:text-5xl md:text-6xl uppercase tracking-[0.2em] text-white text-center whitespace-nowrap">
+            PROJECTS
+          </h1>
         </div>
+      </div>
 
-      {/* Main Container */}
-      <div className="relative left-1/2 -translate-x-1/2 bg-[#ffffff] text-[#0D0B1F] p-8 md:p-16 shadow-2xl flex flex-col items-center w-[90vw]">
-        {/* title */}
-        <p className="font-serif text-sm sm:text-base md:text-lg tracking-widest text-[#0D0B1F] uppercase text-center mb-8">
+      {/* Main Content Container - Matches 90vw fluid width */}
+      <div className="bg-[#ffffff] text-[#0D0B1F] pt-14 sm:pt-16 pb-12 px-4 sm:px-12 md:px-16 shadow-2xl flex flex-col items-center w-full">
+        {/* Subtitle */}
+        <p className="font-serif text-xs sm:text-base md:text-lg tracking-widest text-[#0D0B1F] uppercase text-center mb-8 max-w-4xl">
           SHOWCASING INNOVATIVE AI SOLUTIONS BUILT BY OUR TALENTED PARTICIPANTS
         </p>
 
         {/* Track Filter Buttons */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-10 font-mono text-xs sm:text-sm border-b border-[#0D0B1F]/10 pb-6 w-full max-w-4xl">
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-10 font-mono text-xs sm:text-sm border-b border-[#0D0B1F]/10 pb-6 w-full">
           {TRACKS.map((t) => (
             <button
               key={t}
@@ -88,8 +89,8 @@ export const Projects: React.FC = () => {
           ))}
         </div>
 
-        {/* Project Cards  */}
-        <div className="w-full max-w-4xl space-y-6">
+        {/* Project Cards Grid */}
+        <div className="w-full space-y-6 min-h-[300px]">
           {filteredProjects.map((project) => (
             <motion.div
               key={project.id}
@@ -97,49 +98,49 @@ export const Projects: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
-              className="bg-[#0D0B1F] text-[#ffffff] p-8 md:p-12 space-y-5 shadow-md"
+              className="bg-[#0D0B1F] text-[#ffffff] p-6 sm:p-8 md:p-12 space-y-5 shadow-md w-full"
             >
-              {/* GroupNumber */}
+              {/* Group Number & Track */}
               <div className="flex items-center justify-between border-b border-white/10 pb-3">
-                <span className="font-mono text-sm md:text-base tracking-widest uppercase text-[#ffffff]/70">
+                <span className="font-mono text-xs sm:text-sm md:text-base tracking-widest uppercase text-[#ffffff]/70">
                   {project.groupName}
                 </span>
-                <span className="font-mono text-xs px-2.5 py-1 bg-white/10 border border-white/20 text-[#ffffff]/90 uppercase tracking-widest">
+                <span className="font-mono text-[10px] sm:text-xs px-2.5 py-1 bg-white/10 border border-white/20 text-[#ffffff]/90 uppercase tracking-widest">
                   {project.track}
                 </span>
               </div>
 
-              {/* ProjectName */}
-              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl tracking-wide uppercase text-white">
+              {/* Project Name */}
+              <h2 className="font-serif text-xl sm:text-3xl md:text-4xl tracking-wide uppercase text-white">
                 {project.projectName}
               </h2>
 
-              {/* Team Members  */}
-              <div className="flex flex-wrap gap-4 font-mono text-sm md:text-base text-[#ffffff]/80 pt-1 pb-2">
+              {/* Team Members */}
+              <div className="flex flex-wrap gap-3 sm:gap-4 font-mono text-xs sm:text-sm md:text-base text-[#ffffff]/80 pt-1 pb-2">
                 {project.members.map((member, index) => (
                   <span key={index}>{member}</span>
                 ))}
               </div>
 
               {/* Short Intro */}
-              <p className="font-mono text-sm sm:text-base leading-relaxed text-[#ffffff]/90 text-justify">
+              <p className="font-mono text-xs sm:text-base leading-relaxed text-[#ffffff]/90 text-justify">
                 {project.shortIntro}
               </p>
 
-              {/* Link + View Details */}
+              {/* Links & Details */}
               <div className="pt-2 flex flex-wrap items-center justify-between gap-4">
                 <a
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-mono text-sm md:text-base text-[#ffffff] underline underline-offset-4 hover:opacity-75 transition-opacity"
+                  className="font-mono text-xs sm:text-sm md:text-base text-[#ffffff] underline underline-offset-4 hover:opacity-75 transition-opacity break-all sm:break-normal"
                 >
                   {project.link}
                 </a>
 
                 <button
                   onClick={() => setActiveProject(project)}
-                  className="font-mono text-sm text-[#ffffff]/70 hover:text-white uppercase tracking-wider cursor-pointer transition-colors"
+                  className="font-mono text-xs sm:text-sm text-[#ffffff]/70 hover:text-white uppercase tracking-wider cursor-pointer transition-colors"
                 >
                   [ View Details ]
                 </button>
@@ -148,7 +149,7 @@ export const Projects: React.FC = () => {
           ))}
 
           {filteredProjects.length === 0 && (
-            <div className="text-center py-12 text-[#0D0B1F]/70 font-mono text-sm">
+            <div className="flex items-center justify-center h-48 text-[#0D0B1F]/70 font-mono text-sm">
               No projects found for the "{selectedTrack}" track yet.
             </div>
           )}
@@ -172,7 +173,7 @@ export const Projects: React.FC = () => {
                 [ CLOSE X ]
               </button>
 
-              <h3 className="text-2xl font-serif uppercase text-white tracking-wider pr-10">
+              <h3 className="text-xl sm:text-2xl font-serif uppercase text-white tracking-wider pr-10">
                 {activeProject.projectName}
               </h3>
 

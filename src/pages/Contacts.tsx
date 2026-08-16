@@ -27,9 +27,9 @@ export const Contacts: React.FC = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full px-6 md:px-10 lg:px-16 py-8 md:py-16 flex flex-col justify-center min-h-[calc(100vh-140px)] text-[#ffffff]"
+      className="w-full px-4 sm:px-10 lg:px-16 pt-0 sm:pt-8 pb-8 md:py-16 flex flex-col justify-start sm:justify-center text-[#ffffff]"
     >
-      <div className="max-w-4xl mx-auto w-full space-y-12">
+      <div className="max-w-4xl mx-auto w-full space-y-8 sm:space-y-12">
         {/* Top Banner Image */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -46,7 +46,7 @@ export const Contacts: React.FC = () => {
         </motion.div>
 
         {/* Section 1: CONTACT US */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start mb-6 sm:mb-10">
           {/* Left Title */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -93,7 +93,7 @@ export const Contacts: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="pt-12 border-t border-white/10 space-y-4"
+          className="pt-8 sm:pt-12 border-t border-white/10 space-y-4"
         >
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase tracking-wider text-white">
             PARTNER WITH US
@@ -111,13 +111,17 @@ export const Contacts: React.FC = () => {
               </a>
             </p>
 
-            <div className="pt-4">
-              <button
-                onClick={() => setShowInquiryModal(true)}
-                className="bg-[#0D0B1F] text-white border border-white/20 font-mono text-xs uppercase px-5 py-2.5 hover:bg-white hover:text-[#0D0B1F] transition-colors cursor-pointer"
+            {/* SPONSORSHIP PDF BUTTON */}
+            <div className="pt-4 flex items-center gap-4">
+              <a
+                href="src/assets/sponsorship.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download="Sponsorship_Package.pdf"
+                className="inline-block bg-[#0D0B1F] text-white border border-white/20 font-mono text-xs uppercase px-5 py-2.5 hover:bg-white hover:text-[#0D0B1F] transition-colors cursor-pointer"
               >
-                Become a Sponsor
-              </button>
+                Become a Sponsor (PDF) &darr;
+              </a>
             </div>
           </div>
         </motion.div>

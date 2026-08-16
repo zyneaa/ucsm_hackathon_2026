@@ -12,11 +12,9 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<PageSection>('home');
 
   return (
-    <div className="min-h-screen bg-[#0D0B1F] text-[#ffffff] flex flex-col justify-between overflow-x-clip selection:bg-white selection:text-[#0D0B1F]">
-      <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
-
+    <div className="min-h-screen flex flex-col justify-between overflow-x-clip selection:bg-white selection:text-[#0D0B1F] subpixel-antialiased">
       <main className="flex-grow flex items-center">
-        <div className="w-[75%] max-w-[1440px] mx-auto">
+        <div className="max-w-screen mx-auto">
           <AnimatePresence mode="wait">
             {activeTab === 'home' && <Home key="home" />}
             {activeTab === 'about' && <About key="about" />}

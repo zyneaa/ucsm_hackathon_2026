@@ -1,47 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100..700&display=swap");
 @import "tailwindcss";
 
-@font-face {
-  font-family: "The Seasons";
-  src: url("./assets/The Seasons.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "The Seasons";
-  src: url("./assets/The Seasons.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+@theme {
+  --color-brand-primary: #ffffff;
+  --color-brand-secondary: #0D0B1F;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
 }
 
 @layer base {
-  :root {
-    --font-serif: "The Seasons", "Bodoni Moda", "Playfair Display", "Cormorant Garamond", Georgia, serif;
-    --font-mono: "IBM Plex Mono", "IMB Plex Mono", monospace;
-  }
-
   body {
     background-color: #0D0B1F;
     color: #ffffff;
     font-family: var(--font-mono);
     overflow-x: hidden;
   }
-}
-
-.font-seasons {
-  font-family: "The Seasons", "Bodoni Moda", "Playfair Display", "Cormorant Garamond", Georgia, serif;
-}
-
-.font-mono-plex {
-  font-family: "IBM Plex Mono", "IMB Plex Mono", monospace;
-}
-
-/* Custom dither pattern effect overlay for ultra realism */
-.dither-bg {
-  background-image: radial-gradient(#0D0B1F 1px, transparent 0);
-  background-size: 3px 3px;
 }
 
 /* Custom vertical text style for About section */

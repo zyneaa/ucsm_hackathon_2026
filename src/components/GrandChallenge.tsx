@@ -1,11 +1,11 @@
 import React from 'react';
 
-import ChallengeHeaderImg from '../assets/grand.jpg';
+import ChallengeHeaderImg from '../assets/Grand.jpg';
 import AgricultureImg from '../assets/Agriculture.jpg';
 import HealthcareImg from '../assets/HealthCare.jpg';
 import EducationImg from '../assets/Education.jpg';
 import SmartCityImg from '../assets/SmartCity.jpg';
-import FintechImg from '../assets/FinTech.jpg';
+import FintechImg from '../assets/Fintech.jpg';
 //import type { Track } from '../types';
 
 /*const TRACKS_DATA: Track[] = [

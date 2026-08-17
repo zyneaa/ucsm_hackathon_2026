@@ -168,7 +168,7 @@ export const Projects: React.FC = () => {
             >
               <button
                 onClick={() => setActiveProject(null)}
-                className="absolute top-4 right-4 text-white/70 hover:text-white font-mono text-xs cursor-pointer"
+                className="absolute top-4 right-4 p-2 md:p-0 text-white/70 hover:text-white font-mono text-xs cursor-pointer"
               >
                 [ CLOSE X ]
               </button>

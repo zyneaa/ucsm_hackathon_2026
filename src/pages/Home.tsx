@@ -38,7 +38,7 @@ export const Home: React.FC = () => {
             className="w-full lg:w-1/2 z-10 relative space-y-4 shrink-0"
           >
             <div className="font-mono text-xs sm:text-sm md:text-base tracking-[0.25em] text-[#ffffff]/80 uppercase pl-1">
-              UCSM . September 3
+              UCSM . September 12
             </div>
 
             <div className="font-serif tracking-tight text-[#ffffff] uppercase text-6xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-[9.5rem] leading-[0.85] space-y-2">

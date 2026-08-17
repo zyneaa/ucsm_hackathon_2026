@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import React from 'react';
 
 import ChallengeHeaderImg from '../assets/grand.jpg';
 import AgricultureImg from '../assets/Agriculture.jpg';
@@ -58,8 +57,6 @@ const TRACKS_DATA: Track[] = [
 ];
 
 export const GrandChallenge: React.FC = () => {
-  const [selectedTrack, setSelectedTrack] = useState<Track | null>(null);
-
   return (
     <div className="w-full pt-8 pb-4 md:py-12">
       <div className="relative left-1/2 -translate-x-1/2 bg-[#ffffff] text-[#0D0B1F] p-8 md:p-20 shadow-2xl rounded-xs flex flex-col items-center text-center w-[90vw]">
@@ -165,64 +162,6 @@ export const GrandChallenge: React.FC = () => {
         </div>
 
       </div>
-
-      {/* Track Details Modal */}
-      <AnimatePresence>
-        {selectedTrack && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0D0B1F]/70 backdrop-blur-sm">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.9 }}
-              className="bg-[#0D0B1F] text-white border border-white/20 max-w-lg w-full p-6 md:p-8 space-y-6 relative shadow-2xl"
-            >
-              <button
-                onClick={() => setSelectedTrack(null)}
-                className="absolute top-4 right-4 text-white/70 hover:text-white font-mono text-sm cursor-pointer"
-              >
-                [ CLOSE X ]
-              </button>
-
-              <div className="flex items-center space-x-4 border-b border-white/10 pb-4">
-                <img
-                  src={selectedTrack.image}
-                  alt={selectedTrack.name}
-                  className="w-16 h-16 object-cover border border-white/20"
-                />
-                <div>
-                  <h3 className="text-2xl font-serif uppercase tracking-wider text-white">
-                    {selectedTrack.name} Track
-                  </h3>
-                  <p className="font-mono text-xs text-white/70 lowercase">
-                    {selectedTrack.label}
-                  </p>
-                </div>
-              </div>
-
-              <div className="space-y-4 font-mono text-xs md:text-sm text-white/80">
-                <div>
-                  <h4 className="text-white font-semibold uppercase tracking-wider mb-1">Challenge Focus:</h4>
-                  <p className="leading-relaxed">{selectedTrack.description}</p>
-                </div>
-
-                <div>
-                  <h4 className="text-white font-semibold uppercase tracking-wider mb-1">Track Prizes:</h4>
-                  <ul className="list-disc list-inside space-y-1 text-white/70">
-                    {selectedTrack.prizes.map((p, i) => (
-                      <li key={i}>{p}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 className="text-white font-semibold uppercase tracking-wider mb-1">Key Mentors:</h4>
-                  <p className="text-white/70">{selectedTrack.mentors.join(', ')}</p>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
     </div>
   );
 };

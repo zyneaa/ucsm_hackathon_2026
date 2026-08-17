@@ -6,9 +6,9 @@ import HealthcareImg from '../assets/HealthCare.jpg';
 import EducationImg from '../assets/Education.jpg';
 import SmartCityImg from '../assets/SmartCity.jpg';
 import FintechImg from '../assets/FinTech.jpg';
-import type { Track } from '../types';
+//import type { Track } from '../types';
 
-const TRACKS_DATA: Track[] = [
+/*const TRACKS_DATA: Track[] = [
   {
     id: 'agriculture',
     name: 'Agriculture',
@@ -54,7 +54,7 @@ const TRACKS_DATA: Track[] = [
     prizes: ['$1,500 First Place', 'FinTech Incubator Entry', 'Bank API Sandbox Access'],
     mentors: ['U Aung Naing (FinTech Architect)', 'Daw Nilar Myint (Risk AI Lead)']
   }
-];
+];*/
 
 export const GrandChallenge: React.FC = () => {
   return (

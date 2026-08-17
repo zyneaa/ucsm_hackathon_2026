@@ -227,7 +227,7 @@ export const Contacts: React.FC = () => {
           </h2>
 
           <div className="font-mono text-xs sm:text-sm md:text-base text-white/80 space-y-2 lowercase">
-            <p>interested in becoming a sponsor like our diamond partner?</p>
+            <p>interested in becoming our sponsor?</p>
             <p className="pt-1">
               reach out to{' '}
               <a

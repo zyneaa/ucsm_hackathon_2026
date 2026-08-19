@@ -241,7 +241,7 @@ export const Contacts: React.FC = () => {
             {/* SPONSORSHIP PDF BUTTON */}
             <div className="pt-4 flex items-center gap-4">
               <a
-                href="src/assets/sponsorship.pdf"
+                href="/sponsorship.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-[#0D0B1F] text-white border border-white/20 font-mono text-xs uppercase px-5 py-2.5 hover:bg-white hover:text-[#0D0B1F] transition-colors cursor-pointer"

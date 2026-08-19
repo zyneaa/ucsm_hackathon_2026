@@ -6,19 +6,21 @@ import  {Footer}  from './components/Footer';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Projects } from './pages/Projects';
+
 import { Contacts } from './pages/Contacts';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<PageSection>('home');
 
   return (
-    <div className="min-h-screen bg-[#0D0B1F] text-[#ffffff] flex flex-col justify-between overflow-x-clip selection:bg-white selection:text-[#0D0B1F]">
+    <div className="min-h-screen w-full bg-[#0D0B1F] text-[#ffffff] flex flex-col justify-between overflow-x-clip selection:bg-white selection:text-[#0D0B1F]">
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
 
       <main className="flex-grow flex items-start sm:items-center">
         <div className="w-[90vw] mx-auto">
           <AnimatePresence mode="wait">
             {activeTab === 'home' && <Home key="home" />}
+            
             {activeTab === 'about' && <About key="about" />}
             {activeTab === 'projects' && <Projects key="projects" />}
             {activeTab === 'contact' && <Contacts key="contact" />}

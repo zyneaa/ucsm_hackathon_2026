@@ -1,4 +1,4 @@
-export type PageSection = 'home' | 'projects' | 'about' | 'contact';
+export type PageSection = 'home' | 'teams' | 'projects' | 'about' | 'contact';
 
 export interface Track {
   id: string;
@@ -19,4 +19,11 @@ export interface Project {
   shortIntro: string;
   track: string;
   link: string;
+}
+
+export interface Team {
+  id: number;
+  teamNumber: string;
+  teamName: string;
+  members: string[];
 }

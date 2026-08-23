@@ -51,17 +51,17 @@
   transform: rotate(180deg);
 }
 
-/* Smooth custom scrollbar */
+/* Hide scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  display: none;
+  width: 0;
+  height: 0;
 }
-::-webkit-scrollbar-track {
-  background: #0D0B1F;
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
-::-webkit-scrollbar-thumb {
-  background: #ffffff;
-  border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #ffffff;
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

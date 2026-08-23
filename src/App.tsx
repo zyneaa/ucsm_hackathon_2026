@@ -8,6 +8,7 @@ import { About } from './pages/About';
 import { Projects } from './pages/Projects';
 
 import { Contacts } from './pages/Contacts';
+import { Partner } from './pages/Partner';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<PageSection>('home');
@@ -23,11 +24,12 @@ export default function App() {
             
             {activeTab === 'about' && <About key="about" />}
             {activeTab === 'projects' && <Projects key="projects" />}
-            {activeTab === 'contact' && <Contacts key="contact" />}
+            {activeTab === 'contact' && <Contacts key="contact" setActiveTab={setActiveTab} />}
+            {activeTab === 'partner' && <Partner key="partner" setActiveTab={setActiveTab} />}
           </AnimatePresence>
         </div>
       </main>
-      <Footer />
+      <Footer setActiveTab={setActiveTab} />
     </div>
   );
 }

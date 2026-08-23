@@ -1,0 +1,32 @@
+{
+  "diamond": [
+    {
+      "id": "mm-ix",
+      "name": "MM-IX",
+      "logo": "/sponsors/sponsor1.png",
+      "link": "https://www.mm-ix.net/",
+      "description": "Diamond partner supporting UCSM AI Hackathon 2026.",
+      "fullDescription": "Myanmar Internet Exchange Association (MMIX) is a non-profit association established in September 2017 as Myanmar's first Internet Exchange Point (IXP).\n\nMMIX provides IP peering services that enable Internet Service Providers (ISPs), content providers, and other network organizations to exchange Internet traffic locally. This local traffic exchange helps reduce international bandwidth costs, improve network performance, and provide a better Internet experience for users in Myanmar.\n\nIn addition, MMIX leads the Myanmar Network Operators' Group (MMNOG), a community platform for network engineers and Internet professionals in Myanmar to share technical knowledge, learn from each other, and exchange operational experience."
+    }
+  ],
+  "gold": [],
+  "silver": [],
+  "bronze": [
+    {
+      "id": "bronze-1",
+      "name": "Y Agri Food",
+      "logo": "/sponsors/Bronze1.jpg",
+      "link": "https://techbridge.example.com",
+      "description": "Bronze partner supporting UCSM AI Hackathon 2026.",
+      "fullDescription": "TechBridge Myanmar connects local developers with global opportunities through mentorship, training programs, and industry partnerships. Committed to building Myanmar's tech ecosystem."
+    },
+    {
+      "id": "bronze-2",
+      "name": "Myanmar Computer Professionals Association",
+      "logo": "/sponsors/Bronze2.png",
+      "link": "https://dataflow.example.com",
+      "description": "Bronze partner supporting UCSM AI Hackathon 2026.",
+      "fullDescription": "DataFlow Labs specializes in data engineering and AI/ML solutions for enterprises across Southeast Asia. Empowering the next generation of data scientists."
+    }
+  ]
+}

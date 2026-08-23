@@ -1,4 +1,13 @@
-export type PageSection = 'home' | 'teams' | 'projects' | 'about' | 'contact';
+export type PageSection = 'home' | 'teams' | 'projects' | 'about' | 'contact' | 'partner';
+
+export interface Sponsor {
+  id: string;
+  name: string;
+  logo: string;
+  link: string;
+  description: string;
+  fullDescription: string;
+}
 
 export interface Track {
   id: string;

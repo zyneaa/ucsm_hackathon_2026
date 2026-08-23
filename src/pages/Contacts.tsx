@@ -2,8 +2,13 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MapPin, Mail, Phone, X } from 'lucide-react';
 import ContactBannerImg from '../assets/ContactUs.png';
+import type { PageSection } from '../types';
 
-export const Contacts: React.FC = () => {
+interface ContactsProps {
+  setActiveTab: (tab: PageSection) => void;
+}
+
+export const Contacts: React.FC<ContactsProps> = ({ setActiveTab }) => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [showInquiryModal, setShowInquiryModal] = useState(false);
   const [name, setName] = useState('');
@@ -239,7 +244,7 @@ export const Contacts: React.FC = () => {
             </p>
 
             {/* SPONSORSHIP PDF BUTTON */}
-            <div className="pt-4 flex items-center gap-4">
+            <div className="pt-4 flex items-center gap-4 flex-wrap">
               <a
                 href="/sponsorship.pdf"
                 target="_blank"
@@ -248,6 +253,12 @@ export const Contacts: React.FC = () => {
               >
                 Become a Sponsor (PDF) &darr;
               </a>
+              <button
+                onClick={() => setActiveTab('partner')}
+                className="inline-block bg-white text-[#0D0B1F] border border-white font-mono text-xs uppercase px-5 py-2.5 font-semibold hover:bg-[#0D0B1F] hover:text-white transition-colors cursor-pointer"
+              >
+                View All Sponsors &rarr;
+              </button>
             </div>
           </div>
         </motion.div>

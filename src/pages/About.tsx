@@ -25,28 +25,64 @@ export const About: React.FC = () => {
           
           {/* Top Subtitle */}
           <p className="font-serif text-sm sm:text-base md:text-lg tracking-wider text-[#ffffff] uppercase leading-snug text-center md:text-left">
-            PIONEERING AI INNOVATION AT MYANMAR'S LEADING COMPUTER SCIENCE UNIVERSITY
+            PIONEERING AI INNOVATION AT MYANMAR'S LEADING COMPUTER STUDIES UNIVERSITIES
           </p>
 
           {/* White Highlight Block 1 */}
           <div className="bg-[#ffffff] text-[#0D0B1F] p-6 sm:p-8 md:p-10 shadow-md w-full">
-            <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed uppercase tracking-wide">
-              THE UCSM AI HACKATHON 2026 IS THE FLAGSHIP ANNUAL INNOVATION EVENT MARKING 29 YEARS OF ACADEMIC EXCELLENCE AT THE UNIVERSITY OF COMPUTER STUDIES, MANDALAY (UCSM).
+            <h2 className="font-serif font-bold text-lg sm:text-xl md:text-2xl tracking-wide mb-3 md:mb-4">
+              What is a Hackathon?
+            </h2>
+            <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed mb-3 md:mb-4">
+              At its core, a hackathon is an invention marathon. It is a high-energy, 24-hour continuous event where students form teams of two to five members to brainstorm, design, and build a working software prototype from scratch.
+            </p>
+            <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed">
+              Unlike traditional exams or long-term projects, a hackathon simulates the fast-paced environment of the tech industry. Students are provided with power, high-speed Wi-Fi, mentorship, and meals. In return, they must collaborate under extreme time pressure to turn a raw idea into a functional, deployable technological solution by the time the clock runs out. It is the ultimate test of coding ability, interdisciplinary teamwork, and rapid problem-solving.
             </p>
           </div>
 
           {/* White Highlight Block 2 */}
           <div className="bg-[#ffffff] text-[#0D0B1F] p-6 sm:p-8 md:p-10 shadow-md w-full">
-            <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed uppercase tracking-wide">
-              FOR NEARLY THREE DECADES, UCSM HAS BEEN A CORNERSTONE OF COMPUTING EDUCATION IN MYANMAR. THIS 24-HOUR CONTINUOUS ON-SITE CHALLENGE MOVES BEYOND TRADITIONAL CODING TO FOSTER INTERDISCIPLINARY TEAMWORK AND DEPLOYABLE AI SOLUTIONS.
+            <h2 className="font-serif font-bold text-lg sm:text-xl md:text-2xl tracking-wide mb-3 md:mb-4">
+              Our Legacy: The History of UCSM
+            </h2>
+            <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed mb-3 md:mb-4">
+              For nearly three decades, the University of Computer Studies, Mandalay (UCSM) has stood as a cornerstone of computing and technological education in Myanmar. Established with the vision of nurturing highly skilled IT professionals, UCSM has consistently adapted to the rapidly evolving landscape of global technology.
+            </p>
+            <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed">
+              From early computer science foundations to modern software engineering, our alumni have gone on to shape Myanmar’s digital infrastructure. Today, as we commemorate our 28th Anniversary, UCSM remains committed to academic excellence, bridging the gap between theoretical research and practical, industry-ready application.
+            </p>
+          </div>
+
+          {/* White Highlight Block 3 */}
+          <div className="bg-[#ffffff] text-[#0D0B1F] p-6 sm:p-8 md:p-10 shadow-md w-full">
+            <h2 className="font-serif font-bold text-lg sm:text-xl md:text-2xl tracking-wide mb-3 md:mb-4">
+              Why the UCSM AI Hackathon 2026?
+            </h2>
+            <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed mb-3 md:mb-4">
+              Many university competitions focus purely on writing code. To mark our 28th anniversary, we realized we needed to do more than just test programming skills—we needed to challenge our students to build the future.
+            </p>
+            <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed mb-3 md:mb-4">
+              We created the UCSM AI Hackathon 2026 to transition our students from being consumers of technology to creators of impact. By specifically centering this competition around Artificial Intelligence and introducing the "AI for Myanmar" Grand Challenge, we are asking teams to tackle real-world problems affecting our nation.
+            </p>
+            <p className="font-mono text-xs sm:text-sm md:text-base font-bold mb-2">
+              Our mission for this event is to:
+            </p>
+            <ul className="font-mono text-xs sm:text-sm md:text-base leading-relaxed list-disc list-inside space-y-2 mb-3 md:mb-4">
+              <li><span className="font-bold">Drive Real-World Impact:</span> Encourage practical AI solutions for critical sectors like Agriculture, Healthcare, Education, and Smart Cities.</li>
+              <li><span className="font-bold">Build Industry-Ready Skills:</span> Push students to integrate complex AI libraries (like TensorFlow, PyTorch, and LLMs) into working prototypes.</li>
+              <li><span className="font-bold">Bridge the Gap:</span> Connect our brightest minds directly with industry leaders, technical mentors, and potential employers.</li>
+            </ul>
+            <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed">
+              Ultimately, this hackathon is not just about who can write the best code in 24 hours. It is about empowering the next generation of UCSM innovators to build AI solutions for tomorrow.
             </p>
           </div>
 
           {/* Three Monospace Keywords */}
           <div className="grid grid-cols-3 text-center font-mono text-xs sm:text-sm md:text-base tracking-widest text-[#ffffff] pt-2">
-            <div>brainstorm</div>
-            <div>build</div>
-            <div>submit</div>
+            <div>Code.</div>
+            <div>Create.</div>
+            <div>Innovate.</div>
           </div>
         </div>
       </div>

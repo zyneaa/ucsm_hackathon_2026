@@ -16,7 +16,7 @@
       "id": "bronze-1",
       "name": "Y Agri Food",
       "logo": "/sponsors/Bronze1.jpg",
-      "link": "https://techbridge.example.com",
+      "link": "",
       "description": "Bronze partner supporting UCSM AI Hackathon 2026.",
       "fullDescription": "TechBridge Myanmar connects local developers with global opportunities through mentorship, training programs, and industry partnerships. Committed to building Myanmar's tech ecosystem."
     },
@@ -24,7 +24,7 @@
       "id": "bronze-2",
       "name": "Myanmar Computer Professionals Association",
       "logo": "/sponsors/Bronze2.png",
-      "link": "https://dataflow.example.com",
+      "link": "https://mcpamandalay.org/",
       "description": "Bronze partner supporting UCSM AI Hackathon 2026.",
       "fullDescription": "DataFlow Labs specializes in data engineering and AI/ML solutions for enterprises across Southeast Asia. Empowering the next generation of data scientists."
     }

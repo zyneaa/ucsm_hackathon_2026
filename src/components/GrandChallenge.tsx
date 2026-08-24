@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ChallengeHeaderImg from '../assets/grand.jpg';
+import ChallengeHeaderImg from '../assets/Grand.jpg';
 import AgricultureImg from '../assets/Agriculture.jpg';
 import HealthcareImg from '../assets/HealthCare.jpg';
 import EducationImg from '../assets/Education.jpg';

@@ -30,7 +30,7 @@ export const About: React.FC = () => {
 
           {/* White Highlight Block 1 */}
           <div className="bg-[#ffffff] text-[#0D0B1F] p-6 sm:p-8 md:p-10 shadow-md w-full">
-            <h2 className="font-serif font-bold text-lg sm:text-xl md:text-2xl tracking-wide mb-3 md:mb-4">
+            <h2 className="font-stretch-95% font-bold text-lg sm:text-xl md:text-2xl tracking-wide mb-3 md:mb-4">
               What is a Hackathon?
             </h2>
             <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed mb-3 md:mb-4">
@@ -43,11 +43,11 @@ export const About: React.FC = () => {
 
           {/* White Highlight Block 2 */}
           <div className="bg-[#ffffff] text-[#0D0B1F] p-6 sm:p-8 md:p-10 shadow-md w-full">
-            <h2 className="font-serif font-bold text-lg sm:text-xl md:text-2xl tracking-wide mb-3 md:mb-4">
+            <h2 className="font-stretch-95% font-bold text-lg sm:text-xl md:text-2xl tracking-wide mb-3 md:mb-4">
               Our Legacy: The History of UCSM
             </h2>
             <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed mb-3 md:mb-4">
-              For nearly three decades, the University of Computer Studies, Mandalay (UCSM) has stood as a cornerstone of computing and technological education in Myanmar. Established with the vision of nurturing highly skilled IT professionals, UCSM has consistently adapted to the rapidly evolving landscape of global technology.
+              For nearly three decades, the<span className='font-bold'> University of Computer Studies, Mandalay (UCSM)</span>  has stood as a cornerstone of computing and technological education in Myanmar. Established with the vision of nurturing highly skilled IT professionals, UCSM has consistently adapted to the rapidly evolving landscape of global technology.
             </p>
             <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed">
               From early computer science foundations to modern software engineering, our alumni have gone on to shape Myanmar’s digital infrastructure. Today, as we commemorate our 28th Anniversary, UCSM remains committed to academic excellence, bridging the gap between theoretical research and practical, industry-ready application.
@@ -56,7 +56,7 @@ export const About: React.FC = () => {
 
           {/* White Highlight Block 3 */}
           <div className="bg-[#ffffff] text-[#0D0B1F] p-6 sm:p-8 md:p-10 shadow-md w-full">
-            <h2 className="font-serif font-bold text-lg sm:text-xl md:text-2xl tracking-wide mb-3 md:mb-4">
+            <h2 className="font-stretch-95% font-bold text-lg sm:text-xl md:text-2xl tracking-wide mb-3 md:mb-4">
               Why the UCSM AI Hackathon 2026?
             </h2>
             <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed mb-3 md:mb-4">

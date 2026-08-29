@@ -19,15 +19,18 @@ export interface Track {
   mentors: string[];
 }
 
+export interface ProjectMember {
+  name: string;
+  year: string;
+}
+
 export interface Project {
   id: number;
   groupName: string;
   projectName: string;
-  members: string[];
+  members: ProjectMember[];
   description: string;
-  shortIntro: string;
-  track: string;
-  link: string;
+  pdfUrl: string;
 }
 
 export interface Team {

@@ -18,7 +18,7 @@ const projectsData: Project[] = [
       { "name": "Khin Nyein Aye", "year": "First Year" }
     ],
     "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-    "pdfUrl": "/pdfs/gcnb.pdf"
+    "pdfUrl": "/pdfs/team_01.pdf"
   },
   {
     "id": 2,
@@ -33,7 +33,7 @@ const projectsData: Project[] = [
       { "name": "Myat Hmu Thar", "year": "First Year" }
     ],
     "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-    "pdfUrl": "/pdfs/code-4-earth.pdf"
+    "pdfUrl": "/pdfs/team_02.pdf"
   },
   {
     "id": 3,
@@ -48,7 +48,7 @@ const projectsData: Project[] = [
       { "name": "May Myat Noe Kyaw", "year": "First Year" }
     ],
     "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-    "pdfUrl": "/pdfs/beyond-binary.pdf"
+    "pdfUrl": "/pdfs/team_03.pdf"
   },
   {
     "id": 4,
@@ -63,7 +63,7 @@ const projectsData: Project[] = [
       { "name": "Ma Zin Win Htike", "year": "First Year" }
     ],
     "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-    "pdfUrl": "/pdfs/nextgen-power.pdf"
+    "pdfUrl": "/pdfs/team_04.pdf"
   },
   {
     "id": 5,
@@ -78,7 +78,7 @@ const projectsData: Project[] = [
       { "name": "May Thu Lwin", "year": "First Year" }
     ],
     "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-    "pdfUrl": "/pdfs/green-code.pdf"
+    "pdfUrl": "/pdfs/team_05.pdf"
   },
   {
     "id": 6,
@@ -93,7 +93,7 @@ const projectsData: Project[] = [
       { "name": "Hsu Pyae Pyae Maung", "year": "First Year" }
     ],
     "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-    "pdfUrl": "/pdfs/team_6.pdf"
+    "pdfUrl": "/pdfs/team_06.pdf"
   },
   {
     "id": 7,
@@ -107,7 +107,7 @@ const projectsData: Project[] = [
       { "name": "Thet Htar Khin Khin", "year": "First Year" }
     ],
     "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-    "pdfUrl": "/pdfs/green-minds.pdf"
+    "pdfUrl": "/pdfs/team_07.pdf"
   },
   {
     "id": 8,
@@ -123,7 +123,7 @@ const projectsData: Project[] = [
       { "name": "Yin Maw Tun", "year": "First Year" }
     ],
     "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-    "pdfUrl": "/pdfs/team_8.pdf"
+    "pdfUrl": "/pdfs/team_08.pdf"
   },
   {
     "id": 9,
@@ -139,7 +139,7 @@ const projectsData: Project[] = [
       { "name": "Moe Myat Myat Khaing", "year": "First Year" }
     ],
     "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-    "pdfUrl": "/pdfs/iconix.pdf"
+    "pdfUrl": "/pdfs/team_09.pdf"
   },
   {
     "id": 10,
@@ -155,7 +155,7 @@ const projectsData: Project[] = [
       { "name": "Yamin Eain", "year": "First Year" }
     ],
     "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-    "pdfUrl": "/pdfs/gaia.pdf"
+    "pdfUrl": "/pdfs/team_10.pdf"
   }
 ]
 

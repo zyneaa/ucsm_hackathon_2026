@@ -184,7 +184,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
             {/* Mobile Footer */}
             <div className="pt-6 border-t border-white/10 text-center space-y-1 font-mono text-xs text-white/50">
               <p>UNIVERSITY OF COMPUTER STUDIES, MANDALAY</p>
-              <p className="text-white/30">SEPTEMBER 3, 2026</p>
+              <p className="text-white/30">AUGUST 26-27, 2026</p>
             </div>
           </motion.div>
         )}

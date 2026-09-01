@@ -101,6 +101,7 @@ const projectsData: Project[] = [
     "projectName": "Green Minds",
     "members": [
       { "name": "Khant Zin Hein", "year": "Fifth Year" },
+      { "name": "Ei Shwe Sin Kyaw", "year": "Fourth Year"},
       { "name": "May Thazin Phoo", "year": "Third Year" },
       { "name": "May Kyal Sin Oo", "year": "First Year" },
       { "name": "Aung Thu", "year": "First Year" },
@@ -217,7 +218,7 @@ export const Projects: React.FC = () => {
               </h2>
 
               {/* Team Members */}
-              <div className="flex flex-wrap items-center gap-x-4 sm:gap-x-6 gap-y-2 font-mono text-xs sm:text-sm md:text-base text-[#ffffff]/80 pt-1 pb-2">
+              <div className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-x-4 sm:gap-x-6 gap-y-2 font-mono text-xs sm:text-sm md:text-base text-[#ffffff]/80 pt-1 pb-2">
                 {project.members.map((member, index) => (
                   <span key={index} className="flex items-center">
                     <svg

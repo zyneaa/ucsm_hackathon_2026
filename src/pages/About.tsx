@@ -34,7 +34,7 @@ export const About: React.FC = () => {
               What is a Hackathon?
             </h2>
             <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed mb-3 md:mb-4">
-              At its core, a hackathon is an invention marathon. It is a high-energy, 24-hour continuous event where students form teams of two to five members to brainstorm, design, and build a working software prototype from scratch.
+              At its core, a hackathon is an invention marathon. It is a high-energy, 24-hour continuous event where students form teams of six to siven members to brainstorm, design, and build a working software prototype from scratch.
             </p>
             <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed">
               Unlike traditional exams or long-term projects, a hackathon simulates the fast-paced environment of the tech industry. Students are provided with power, high-speed Wi-Fi, mentorship, and meals. In return, they must collaborate under extreme time pressure to turn a raw idea into a functional, deployable technological solution by the time the clock runs out. It is the ultimate test of coding ability, interdisciplinary teamwork, and rapid problem-solving.
@@ -47,7 +47,7 @@ export const About: React.FC = () => {
               Our Legacy: The History of UCSM
             </h2>
             <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed mb-3 md:mb-4">
-              For nearly three decades, the<span className='font-bold'> University of Computer Studies, Mandalay (UCSM)</span>  has stood as a cornerstone of computing and technological education in Myanmar. Established with the vision of nurturing highly skilled IT professionals, UCSM has consistently adapted to the rapidly evolving landscape of global technology.
+              For nearly three decades, the <span className='font-bold'>University of Computer Studies, Mandalay (UCSM)</span>  has stood as a cornerstone of computing and technological education in Myanmar. Established with the vision of nurturing highly skilled IT professionals, UCSM has consistently adapted to the rapidly evolving landscape of global technology.
             </p>
             <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed">
               From early computer science foundations to modern software engineering, our alumni have gone on to shape Myanmar’s digital infrastructure. Today, as we commemorate our 28th Anniversary, UCSM remains committed to academic excellence, bridging the gap between theoretical research and practical, industry-ready application.
@@ -60,7 +60,7 @@ export const About: React.FC = () => {
               Why the UCSM AI Hackathon 2026?
             </h2>
             <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed mb-3 md:mb-4">
-              Many university competitions focus purely on writing code. To mark our 28th anniversary, we realized we needed to do more than just test programming skills—we needed to challenge our students to build the future.
+              Many university competitions focus purely on writing code. To mark our 29th anniversary, we realized we needed to do more than just test programming skills—we needed to challenge our students to build the future.
             </p>
             <p className="font-mono text-xs sm:text-sm md:text-base leading-relaxed mb-3 md:mb-4">
               We created the UCSM AI Hackathon 2026 to transition our students from being consumers of technology to creators of impact. By specifically centering this competition around Artificial Intelligence and introducing the "AI for Myanmar" Grand Challenge, we are asking teams to tackle real-world problems affecting our nation.
@@ -98,7 +98,7 @@ export const About: React.FC = () => {
             className="absolute top-0 left-0 h-full w-full md:w-[308%] max-w-none object-cover opacity-30 grayscale filter contrast-125 object-center md:object-left"
           />
           <span className="relative z-10 font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-wide uppercase text-white drop-shadow-lg text-center p-4">
-            29 YEARS
+            Code
           </span>
         </div>
 
@@ -110,7 +110,7 @@ export const About: React.FC = () => {
             className="absolute top-0 left-0 md:-left-[104%] h-full w-full md:w-[308%] max-w-none object-cover opacity-30 grayscale filter contrast-125 object-center"
           />
           <span className="relative z-10 font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-wide uppercase text-white drop-shadow-lg text-center p-4">
-            24 HOURS
+            Create
           </span>
         </div>
 
@@ -122,7 +122,7 @@ export const About: React.FC = () => {
             className="absolute top-0 left-0 md:-left-[208%] h-full w-full md:w-[308%] max-w-none object-cover opacity-30 grayscale filter contrast-125 object-center"
           />
           <span className="relative z-10 font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-wide uppercase text-white drop-shadow-lg text-center p-4">
-            5 TRACKS
+            Innovate
           </span>
         </div>
 
